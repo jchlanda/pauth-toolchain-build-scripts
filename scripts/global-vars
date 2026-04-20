@@ -33,7 +33,7 @@ CMAKE_DIR="$REPO_ROOT/cmake"
 # Linux kernel version to be used to provide user-space headers to libc.
 # Any recent version should work, so this variable is defined here instead
 # of $REPO_ROOT/config.
-LINUX_KERNEL_VERSION=6.1.58
+LINUX_KERNEL_VERSION=6.19.12
 
 CPU_COUNT="$(nproc)"
 

@@ -62,7 +62,7 @@ build_toolchain() {
       --volume "$ROOT/ccache:$CCACHE_DIR:rw" \
       --volume "$ROOT/src:$SRC_DIR:ro" \
       --tmpfs "$INSTALL_DIR:rw,exec,size=2G" \
-      --tmpfs "$BUILD_TMP:rw,exec,size=5G" \
+      --tmpfs "$BUILD_TMP:rw,exec,size=8G" \
       "$DOCKER_IMAGE_NAME" "$REPO_ROOT/scripts/build-in-docker.sh"
 }
 
